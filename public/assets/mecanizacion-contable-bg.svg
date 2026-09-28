@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <defs>
+    <!-- Light Institutional Civic Gradients -->
+    <linearGradient id="daylightSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF4FB" />
+      <stop offset="40%" stop-color="#F1F6FA" />
+      <stop offset="80%" stop-color="#E2EDF6" />
+      <stop offset="100%" stop-color="#D9E8F5" />
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#E0F2FE" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#BAE6FD" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Architecture Stone Gradients -->
+    <linearGradient id="facadeStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1" stop-opacity="0.65" />
+      <stop offset="40%" stop-color="#94A3B8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#64748B" stop-opacity="0.75" />
+    </linearGradient>
+
+    <linearGradient id="columnStone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#E2E8F0" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#64748B" stop-opacity="0.75" />
+    </linearGradient>
+
+    <linearGradient id="roofSlate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="windowReflect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.35" />
+    </linearGradient>
+
+    <!-- Financial Automation & Curve Gradients -->
+    <linearGradient id="savingsCurveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#025B80" stop-opacity="0.7" />
+      <stop offset="80%" stop-color="#0D9488" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="chartAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Built-in Soft Blur Filters for Atmosphere -->
+    <filter id="softAtmosphere" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+    <filter id="subtleBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+
+    <!-- Subtle Ledger Grid Pattern -->
+    <pattern id="ledgerGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#0284C7" stroke-width="0.75" stroke-opacity="0.08" />
+      <circle cx="48" cy="0" r="1.5" fill="#025B80" fill-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <!-- 1. Background Sky & Light Atmosphere Canvas -->
+  <rect width="1920" height="1080" fill="url(#daylightSky)" />
+  <rect width="1920" height="1080" fill="url(#sunGlow)" />
+
+  <!-- Ledger & Financial Data Matrix Overlay -->
+  <rect width="1920" height="1080" fill="url(#ledgerGrid)" />
+
+  <!-- Ambient Light Orbs (Cyan & Emerald) for depth -->
+  <g filter="url(#softAtmosphere)">
+    <circle cx="400" cy="350" r="320" fill="#38BDF8" opacity="0.22" />
+    <circle cx="1500" cy="480" r="380" fill="#2DD4BF" opacity="0.18" />
+    <circle cx="960" cy="200" r="260" fill="#93C5FD" opacity="0.3" />
+  </g>
+
+  <!-- 2. Architectural Silhouette of Municipal Town Hall (Casa Consistorial / Ayuntamiento) -->
+  <g opacity="0.55" transform="translate(180, 160)">
+    
+    <!-- Stone Base Steps / Plaza Stairs -->
+    <rect x="180" y="600" width="1200" height="30" fill="#64748B" rx="4" opacity="0.4" />
+    <rect x="220" y="575" width="1120" height="25" fill="#94A3B8" rx="3" opacity="0.5" />
+    <rect x="260" y="550" width="1040" height="25" fill="#CBD5E1" rx="2" opacity="0.6" />
+
+    <!-- Left Wing (Oficinas de Intervención y Contabilidad) -->
+    <rect x="300" y="320" width="280" height="230" fill="url(#facadeStone)" rx="2" stroke="#64748B" stroke-width="1.5" />
+    <rect x="290" y="300" width="300" height="20" fill="#475569" opacity="0.7" rx="2" />
+    <!-- Balustrade -->
+    <g fill="#64748B" opacity="0.6">
+      <rect x="310" y="285" width="10" height="15" rx="2" />
+      <rect x="345" y="285" width="10" height="15" rx="2" />
+      <rect x="380" y="285" width="10" height="15" rx="2" />
+      <rect x="415" y="285" width="10" height="15" rx="2" />
+      <rect x="450" y="285" width="10" height="15" rx="2" />
+      <rect x="485" y="285" width="10" height="15" rx="2" />
+      <rect x="520" y="285" width="10" height="15" rx="2" />
+      <rect x="555" y="285" width="10" height="15" rx="2" />
+      <rect x="290" y="280" width="300" height="5" rx="1" />
+    </g>
+
+    <!-- Left Windows -->
+    <g>
+      <rect x="330" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="395" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="460" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="525" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+
+      <rect x="330" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="395" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="460" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="525" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+    </g>
+
+    <!-- Right Wing -->
+    <rect x="980" y="320" width="280" height="230" fill="url(#facadeStone)" rx="2" stroke="#64748B" stroke-width="1.5" />
+    <rect x="970" y="300" width="300" height="20" fill="#475569" opacity="0.7" rx="2" />
+    <!-- Balustrade -->
+    <g fill="#64748B" opacity="0.6">
+      <rect x="990" y="285" width="10" height="15" rx="2" />
+      <rect x="1025" y="285" width="10" height="15" rx="2" />
+      <rect x="1060" y="285" width="10" height="15" rx="2" />
+      <rect x="1095" y="285" width="10" height="15" rx="2" />
+      <rect x="1130" y="285" width="10" height="15" rx="2" />
+      <rect x="1165" y="285" width="10" height="15" rx="2" />
+      <rect x="1200" y="285" width="10" height="15" rx="2" />
+      <rect x="1235" y="285" width="10" height="15" rx="2" />
+      <rect x="970" y="280" width="300" height="5" rx="1" />
+    </g>
+
+    <!-- Right Windows -->
+    <g>
+      <rect x="1005" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="1070" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="1135" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+      <rect x="1200" y="340" width="38" height="65" rx="19" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5" />
+
+      <rect x="1005" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="1070" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="1135" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+      <rect x="1200" y="440" width="38" height="60" rx="4" fill="url(#windowReflect)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+    </g>
+
+    <!-- Central Portico & Classical Monumental Facade -->
+    <rect x="560" y="250" width="440" height="300" fill="#E2E8F0" stroke="#64748B" stroke-width="2" />
+
+    <!-- Neoclassical Triangular Pediment (Frontón Clásico) -->
+    <polygon points="540,250 780,120 1020,250" fill="#CBD5E1" stroke="#475569" stroke-width="3" />
+    <polygon points="570,240 780,135 990,240" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" stroke-opacity="0.6" />
+
+    <!-- Civic Shield in Frontón -->
+    <circle cx="780" cy="195" r="26" fill="#FFFFFF" stroke="#025B80" stroke-width="2.5" />
+    <path d="M 780 180 L 780 210 M 768 188 L 792 188 M 768 188 L 762 202 M 768 188 L 774 202 M 760 202 C 760 206 776 206 776 202 Z M 792 188 L 786 202 M 792 188 L 798 202 M 784 202 C 784 206 800 206 800 202 Z" stroke="#025B80" stroke-width="1.8" fill="none" />
+
+    <!-- Entablature / Friso -->
+    <rect x="550" y="250" width="460" height="24" fill="#64748B" opacity="0.6" />
+    <rect x="560" y="274" width="440" height="10" fill="#94A3B8" opacity="0.5" />
+
+    <!-- Monumental Columns (6 Clásicas) -->
+    <g>
+      <!-- Column 1 -->
+      <rect x="590" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="584" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="584" y="538" width="36" height="12" fill="#475569" rx="2" />
+
+      <!-- Column 2 -->
+      <rect x="662" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="656" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="656" y="538" width="36" height="12" fill="#475569" rx="2" />
+
+      <!-- Column 3 -->
+      <rect x="734" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="728" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="728" y="538" width="36" height="12" fill="#475569" rx="2" />
+
+      <!-- Column 4 -->
+      <rect x="802" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="796" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="796" y="538" width="36" height="12" fill="#475569" rx="2" />
+
+      <!-- Column 5 -->
+      <rect x="874" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="868" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="868" y="538" width="36" height="12" fill="#475569" rx="2" />
+
+      <!-- Column 6 -->
+      <rect x="946" y="284" width="24" height="266" fill="url(#columnStone)" rx="3" stroke="#475569" stroke-width="1" />
+      <rect x="940" y="284" width="36" height="12" fill="#475569" rx="2" />
+      <rect x="940" y="538" width="36" height="12" fill="#475569" rx="2" />
+    </g>
+
+    <!-- Mayor Balcony & Main Arched Entrance -->
+    <rect x="740" y="440" width="80" height="110" rx="40" fill="#1E293B" opacity="0.6" stroke="#475569" stroke-width="2" />
+    <rect x="750" y="465" width="60" height="85" fill="url(#windowReflect)" />
+    <!-- Balcony Railing -->
+    <rect x="725" y="415" width="110" height="24" fill="#94A3B8" rx="2" stroke="#475569" stroke-width="1" />
+
+    <!-- Torre del Reloj (Clock Tower) -->
+    <rect x="725" y="20" width="110" height="100" fill="#E2E8F0" stroke="#64748B" stroke-width="2" />
+    <!-- Clock Face -->
+    <circle cx="780" cy="70" r="32" fill="#FFFFFF" stroke="#025B80" stroke-width="3" />
+    <line x1="780" y1="70" x2="780" y2="52" stroke="#025B80" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="780" y1="70" x2="796" y2="70" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="780" cy="70" r="3.5" fill="#025B80" />
+    <!-- Clock ticks -->
+    <circle cx="780" cy="44" r="1.5" fill="#64748B" />
+    <circle cx="806" cy="70" r="1.5" fill="#64748B" />
+    <circle cx="780" cy="96" r="1.5" fill="#64748B" />
+    <circle cx="754" cy="70" r="1.5" fill="#64748B" />
+
+    <!-- Belfry Spire -->
+    <polygon points="710,20 780,-45 850,20" fill="url(#roofSlate)" />
+    <line x1="780" y1="-45" x2="780" y2="-80" stroke="#025B80" stroke-width="2.5" />
+    <polygon points="780,-80 805,-70 780,-60" fill="#0284C7" />
+  </g>
+
+  <!-- 3. Rising Dynamic Accounting Automation Flow & Savings Curves -->
+  <g opacity="0.75">
+    <!-- Area Under Curve -->
+    <path d="M 0 920 C 350 880, 680 820, 1020 710 C 1360 600, 1650 460, 1920 370 L 1920 1080 L 0 1080 Z" fill="url(#chartAreaGrad)" />
+    
+    <!-- Bold Main Savings Wave -->
+    <path d="M 0 920 C 350 880, 680 820, 1020 710 C 1360 600, 1650 460, 1920 370" fill="none" stroke="url(#savingsCurveGrad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Complementary Efficiency Dotted Wave -->
+    <path d="M 0 970 C 400 930, 800 870, 1150 780 C 1500 690, 1720 580, 1920 510" fill="none" stroke="#0284C7" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.5" />
+
+    <!-- Flow Milestone Badges & Circles -->
+    <g>
+      <!-- Point 1 -->
+      <circle cx="680" cy="820" r="6" fill="#025B80" stroke="#FFFFFF" stroke-width="2.5" />
+      <circle cx="680" cy="820" r="16" stroke="#0284C7" stroke-width="1" stroke-opacity="0.4" />
+
+      <!-- Point 2 -->
+      <circle cx="1180" cy="655" r="7" fill="#0D9488" stroke="#FFFFFF" stroke-width="3" />
+      <circle cx="1180" cy="655" r="20" stroke="#14B8A6" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 4" />
+
+      <!-- Point 3: -85% Mechanization Savings -->
+      <circle cx="1650" cy="455" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="3.5" />
+      <circle cx="1650" cy="455" r="24" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.5" />
+    </g>
+
+    <!-- Perspective Comparative Bars (Manual vs Automatizado) -->
+    <g opacity="0.45" transform="translate(1420, 720)">
+      <!-- Traditional manual time -->
+      <rect x="0" y="40" width="26" height="200" fill="#94A3B8" rx="4" />
+      <rect x="42" y="70" width="26" height="170" fill="#94A3B8" rx="4" />
+      
+      <!-- GMI Automated time -->
+      <rect x="96" y="160" width="26" height="80" fill="#025B80" rx="4" />
+      <rect x="138" y="190" width="26" height="50" fill="#10B981" rx="4" />
+      
+      <line x1="-15" y1="240" x2="185" y2="240" stroke="#64748B" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Luminous Gradient Overlay for seamless integration with surrounding sections -->
+  <linearGradient id="edgeBlend" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.85" />
+    <stop offset="20%" stop-color="#F8FAFC" stop-opacity="0.2" />
+    <stop offset="80%" stop-color="#F8FAFC" stop-opacity="0.2" />
+    <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.9" />
+  </linearGradient>
+  <rect width="1920" height="1080" fill="url(#edgeBlend)" />
+</svg>

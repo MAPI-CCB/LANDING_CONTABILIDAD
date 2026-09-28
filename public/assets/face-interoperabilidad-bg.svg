@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="face-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3F7FC"/>
+      <stop offset="50%" stop-color="#EBF2FA"/>
+      <stop offset="100%" stop-color="#E0ECF8"/>
+    </linearGradient>
+
+    <!-- Pattern: Interoperability Mesh Grid -->
+    <pattern id="interop-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4F46E5" stroke-width="0.7" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.5" fill="#4F46E5" fill-opacity="0.08"/>
+    </pattern>
+
+    <pattern id="node-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#025B80" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Base tint & grid -->
+  <rect width="100%" height="100%" fill="url(#face-bg)"/>
+  <rect width="100%" height="100%" fill="url(#interop-grid)"/>
+  <rect width="100%" height="100%" fill="url(#node-dots)"/>
+
+  <!-- Watermark: Flow of Electronic Invoice to Tramitador and SEPA -->
+  <g transform="translate(60, 150)" opacity="0.28">
+    <!-- Connecting network lines -->
+    <path d="M 60,60 C 200,30 320,90 480,50 S 720,20 860,60" fill="none" stroke="#4F46E5" stroke-width="2" stroke-dasharray="6,4"/>
+    
+    <!-- Stage 1: FACe Punto General de Entrada -->
+    <g transform="translate(40, 20)">
+      <rect x="0" y="0" width="140" height="70" rx="10" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1.8"/>
+      <text x="70" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#4F46E5" text-anchor="middle">FACe PGEe</text>
+      <text x="70" y="46" font-family="monospace" font-size="10" font-weight="700" fill="#4338CA" text-anchor="middle">Factura-e 3.2.2</text>
+      <circle cx="20" cy="56" r="4" fill="#10B981"/>
+      <text x="30" y="60" font-family="system-ui, sans-serif" font-size="9" fill="#047857" font-weight="bold">Firma FNMT OK</text>
+    </g>
+
+    <!-- Stage 2: ENI / Expediente SEDIPUALBA / GESTIONA -->
+    <g transform="translate(300, 20)">
+      <rect x="0" y="0" width="160" height="70" rx="10" fill="#FFFFFF" stroke="#025B80" stroke-width="1.8"/>
+      <text x="80" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#025B80" text-anchor="middle">SEDIPUALBA / ENI</text>
+      <text x="80" y="46" font-family="monospace" font-size="10" font-weight="700" fill="#0369A1" text-anchor="middle">EXPEDIENTE ELECTRÓNICO</text>
+      <circle cx="20" cy="56" r="4" fill="#0284C7"/>
+      <text x="30" y="60" font-family="system-ui, sans-serif" font-size="9" fill="#0369A1" font-weight="bold">Foliado Digital</text>
+    </g>
+
+    <!-- Stage 3: Remesas SEPA Norma 34 -->
+    <g transform="translate(580, 20)">
+      <rect x="0" y="0" width="150" height="70" rx="10" fill="#FFFFFF" stroke="#047857" stroke-width="1.8"/>
+      <text x="75" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">SEPA NORMA 34</text>
+      <text x="75" y="46" font-family="monospace" font-size="10" font-weight="700" fill="#065F46" text-anchor="middle">pain.001.001.03</text>
+      <circle cx="20" cy="56" r="4" fill="#10B981"/>
+      <text x="30" y="60" font-family="system-ui, sans-serif" font-size="9" fill="#047857" font-weight="bold">XML Bancario</text>
+    </g>
+  </g>
+
+  <!-- Watermark: Large Official Stamp of Public Administration Interoperability -->
+  <g transform="translate(800, 180)" opacity="0.22">
+    <!-- Circular Seal -->
+    <circle cx="170" cy="170" r="150" fill="none" stroke="#4F46E5" stroke-width="2" stroke-dasharray="6,4"/>
+    <circle cx="170" cy="170" r="135" fill="none" stroke="#4F46E5" stroke-width="1.5"/>
+    <circle cx="170" cy="170" r="110" fill="#4F46E5" fill-opacity="0.03"/>
+
+    <!-- Facturae Electronic Document Emblem -->
+    <path d="M 140,115 L 185,115 L 205,135 L 205,215 L 140,215 Z" fill="#FFFFFF" stroke="#4F46E5" stroke-width="2"/>
+    <path d="M 185,115 L 185,135 L 205,135" fill="none" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="150" y1="145" x2="190" y2="145" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="150" y1="160" x2="195" y2="160" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="150" y1="175" x2="180" y2="175" stroke="#4F46E5" stroke-width="2"/>
+    <path d="M 150,195 L 160,205 L 180,185" fill="none" stroke="#10B981" stroke-width="2.5"/>
+
+    <!-- Seal Typography -->
+    <text x="170" y="85" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#4F46E5" text-anchor="middle" letter-spacing="3">
+      INTEROPERABILIDAD ENI
+    </text>
+    <text x="170" y="275" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#4F46E5" text-anchor="middle" letter-spacing="2">
+      SECTOR PÚBLICO ESPAÑOL
+    </text>
+  </g>
+
+  <!-- Watermark: XML Facturae Code Snippet -->
+  <g transform="translate(80, 480)" opacity="0.32" font-family="monospace" font-size="11" fill="#4338CA">
+    <text x="0" y="0">&lt;fe:Facturae xmlns:fe=&quot;http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml&quot;&gt;</text>
+    <text x="20" y="24">&lt;FileHeader&gt;&lt;SchemaVersion&gt;3.2.2&lt;/SchemaVersion&gt;&lt;Modality&gt;I&lt;/Modality&gt;&lt;/FileHeader&gt;</text>
+    <text x="20" y="48">&lt;Parties&gt;&lt;Buyer&gt;&lt;AdministrativeCentres&gt;&lt;RoleTypeCode&gt;01&lt;/RoleTypeCode&gt;&lt;CentreCode&gt;L01280067&lt;/CentreCode&gt;&lt;/Buyer&gt;</text>
+    <text x="20" y="72">&lt;Invoice&gt;&lt;InvoiceNumber&gt;FAC-2024-00892&lt;/InvoiceNumber&gt;&lt;TotalAmounts&gt;&lt;TotalGrossAmount&gt;18450.00&lt;/TotalGrossAmount&gt;</text>
+    <text x="20" y="96">&lt;PaymentDetails&gt;&lt;PaymentMeans&gt;04&lt;/PaymentMeans&gt;&lt;IBAN&gt;ES9121000418450200051332&lt;/IBAN&gt;&lt;/PaymentDetails&gt;</text>
+    <text x="20" y="120">&lt;ds:Signature xmlns:ds=&quot;http://www.w3.org/2000/09/xmldsig#&quot;&gt;&lt;ds:X509Certificate&gt;VALID_FNMT_AC_SECTOR_PUBLICO&lt;/ds:Signature&gt;</text>
+    <text x="0" y="144">&lt;/fe:Facturae&gt;</text>
+  </g>
+
+  <!-- Soft Ambient Glow Orbs -->
+  <circle cx="1060" cy="220" r="300" fill="#4F46E5" fill-opacity="0.07" filter="blur(75px)"/>
+  <circle cx="160" cy="580" r="260" fill="#025B80" fill-opacity="0.05" filter="blur(65px)"/>
+</svg>

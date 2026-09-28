@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="hacienda-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F1DC"/>
+      <stop offset="50%" stop-color="#F2E3BC"/>
+      <stop offset="100%" stop-color="#E5CCA0"/>
+    </linearGradient>
+
+    <!-- Grid Patterns -->
+    <pattern id="fiscal-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B45309" stroke-width="0.9" stroke-opacity="0.14"/>
+      <circle cx="0" cy="0" r="1.8" fill="#D97706" fill-opacity="0.18"/>
+    </pattern>
+
+    <pattern id="diagonal-fiscal" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 M 0 0 L 20 20" fill="none" stroke="#B45309" stroke-width="0.6" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Base tint & grid -->
+  <rect width="100%" height="100%" fill="url(#hacienda-bg)"/>
+  <rect width="100%" height="100%" fill="url(#fiscal-grid)"/>
+  <rect width="100%" height="100%" fill="url(#diagonal-fiscal)"/>
+
+  <!-- Watermark: Official Ministry & Plataforma Autoriz@ Flow -->
+  <g transform="translate(60, 150)" opacity="0.55">
+    <!-- Connecting flow track -->
+    <line x1="50" y1="50" x2="680" y2="50" stroke="#B45309" stroke-width="2.5" stroke-dasharray="6,4"/>
+    
+    <!-- Stage 1: Contabilidad Municipal -->
+    <g transform="translate(40, 20)">
+      <circle cx="30" cy="30" r="28" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="30" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#025B80" text-anchor="middle">GMI</text>
+      <text x="30" y="72" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#025B80" text-anchor="middle">Contabilidad</text>
+    </g>
+
+    <!-- Stage 2: Cálculo PMP RD 635/2014 -->
+    <g transform="translate(240, 20)">
+      <rect x="0" y="0" width="130" height="60" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="2"/>
+      <text x="65" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#B45309" text-anchor="middle">PMP GLOBAL</text>
+      <text x="65" y="44" font-family="monospace" font-size="10" font-weight="800" fill="#047857" text-anchor="middle">&lt; 30 DÍAS [OK]</text>
+      <text x="65" y="74" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">RD 635/2014</text>
+    </g>
+
+    <!-- Stage 3: Generación XML / Formato Hacienda -->
+    <g transform="translate(440, 20)">
+      <rect x="0" y="0" width="120" height="60" rx="10" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="60" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#025B80" text-anchor="middle">FICH. XML</text>
+      <text x="60" y="44" font-family="monospace" font-size="10" font-weight="700" fill="#0284C7" text-anchor="middle">AUTORIZ@</text>
+      <text x="60" y="74" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#025B80" text-anchor="middle">Validación</text>
+    </g>
+
+    <!-- Stage 4: Rendición MINHAP -->
+    <g transform="translate(620, 20)">
+      <circle cx="30" cy="30" r="28" fill="#FFFFFF" stroke="#10B981" stroke-width="2.5"/>
+      <path d="M 22,30 L 28,36 L 38,24" stroke="#047857" stroke-width="3" fill="none"/>
+      <text x="30" y="72" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#047857" text-anchor="middle">Rendición OK</text>
+    </g>
+  </g>
+
+  <!-- Watermark: Large Official Ministerial Seal of Hacienda & Tribunal de Cuentas -->
+  <g transform="translate(780, 170)" opacity="0.48">
+    <!-- Concentric Circles -->
+    <circle cx="170" cy="170" r="155" fill="none" stroke="#B45309" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <circle cx="170" cy="170" r="140" fill="none" stroke="#B45309" stroke-width="1.5"/>
+    <circle cx="170" cy="170" r="115" fill="#D97706" fill-opacity="0.08"/>
+
+    <!-- Ministerial Facade / Columns Emblem -->
+    <path d="M 115,140 L 225,140 L 170,95 Z" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="2.2"/>
+    <rect x="125" y="145" width="12" height="65" rx="2" fill="#B45309" fill-opacity="0.45"/>
+    <rect x="148" y="145" width="12" height="65" rx="2" fill="#B45309" fill-opacity="0.45"/>
+    <rect x="170" y="145" width="12" height="65" rx="2" fill="#B45309" fill-opacity="0.45"/>
+    <rect x="192" y="145" width="12" height="65" rx="2" fill="#B45309" fill-opacity="0.45"/>
+    <line x1="110" y1="215" x2="230" y2="215" stroke="#B45309" stroke-width="3"/>
+    <line x1="105" y1="222" x2="235" y2="222" stroke="#B45309" stroke-width="2"/>
+
+    <!-- Seal Typography -->
+    <text x="170" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#B45309" text-anchor="middle" letter-spacing="3.5">
+      MINISTERIO DE HACIENDA
+    </text>
+    <text x="170" y="260" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#B45309" text-anchor="middle" letter-spacing="2.5">
+      PLATAFORMA AUTORIZ@
+    </text>
+    <text x="170" y="278" font-family="monospace" font-size="9" font-weight="700" fill="#78350F" text-anchor="middle">
+      TRIBUNAL DE CUENTAS · OCEX
+    </text>
+  </g>
+
+  <!-- Watermark: PMP Formula & Quarterly Morosity Breakdown -->
+  <g transform="translate(80, 480)" opacity="0.58" font-family="monospace" font-size="11" fill="#78350F">
+    <text x="0" y="0" font-weight="bold">INFORME DE MOROSIDAD Y PERIODO MEDIO DE PAGO GLOBAL (PMP) · LEY 15/2010</text>
+    <line x1="0" y1="10" x2="940" y2="10" stroke="#B45309" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="0" y="32">PMP = (∑ Ratio Operaciones Pagadas × Importe + ∑ Ratio Operaciones Pendientes × Importe) / Importe Total</text>
+    <text x="0" y="56">1T 2024: 19,2 días | 2T 2024: 18,7 días | 3T 2024: 17,9 días | 4T 2024: 18,4 días [CUMPLE LÍMITE 30 DÍAS]</text>
+    <text x="0" y="80">ESTADO RENDICIÓN TELEMÁTICA AUTORIZ@: CERTIFICADA Y FIRMADA CON CERTIFICADO ELECTRÓNICO FNMT</text>
+    <line x1="0" y1="92" x2="940" y2="92" stroke="#B45309" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.5"/>
+    <text x="0" y="112" font-weight="bold">CONFORMIDAD: SECRETARÍA-INTERVENCIÓN GENERAL MUNICIPAL [REGISTRO DE SALIDA MINHAP]</text>
+  </g>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="1060" cy="220" r="300" fill="#D97706" fill-opacity="0.18" filter="blur(75px)"/>
+  <circle cx="160" cy="580" r="260" fill="#025B80" fill-opacity="0.12" filter="blur(65px)"/>
+</svg>

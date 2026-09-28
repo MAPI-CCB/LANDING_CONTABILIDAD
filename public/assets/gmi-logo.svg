@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- GMI Contabilidad Official Squircle Badge -->
+  <defs>
+    <linearGradient id="gmiBadgeBg" x1="256" y1="16" x2="256" y2="496" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#025B80" />
+      <stop offset="100%" stopColor="#015273" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Blue Rounded Rectangle Container -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#gmiBadgeBg)" />
+
+  <!-- Constellation / Network Symbol (Upper Portion) -->
+  <g id="constellation" stroke="#6EC6E8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Horizontal Baseline Bar -->
+    <line x1="126" y1="216" x2="386" y2="216" stroke-width="10" />
+
+    <!-- Center Vertical Stem -->
+    <line x1="256" y1="216" x2="256" y2="108" stroke-width="10" />
+    <circle cx="256" cy="108" r="23" fill="#6EC6E8" stroke="none" />
+
+    <!-- Left Inner Diagonal Stem -->
+    <line x1="256" y1="216" x2="198" y2="132" stroke-width="10" />
+    <circle cx="198" cy="132" r="22" fill="#6EC6E8" stroke="none" />
+
+    <!-- Left Outer Diagonal Stem -->
+    <line x1="256" y1="216" x2="140" y2="168" stroke-width="10" />
+    <circle cx="140" cy="168" r="22" fill="#6EC6E8" stroke="none" />
+
+    <!-- Left Lower Curved Branch -->
+    <path d="M 250 216 C 210 216 160 214 135 198" stroke-width="10" fill="none" />
+    <circle cx="135" cy="198" r="20" fill="#6EC6E8" stroke="none" />
+
+    <!-- Right Inner Diagonal Stem -->
+    <line x1="256" y1="216" x2="314" y2="132" stroke-width="10" />
+    <circle cx="314" cy="132" r="22" fill="#6EC6E8" stroke="none" />
+
+    <!-- Right Outer Diagonal Stem -->
+    <line x1="256" y1="216" x2="372" y2="168" stroke-width="10" />
+    <circle cx="372" cy="168" r="22" fill="#6EC6E8" stroke="none" />
+
+    <!-- Right Lower Curved Branch -->
+    <path d="M 262 216 C 302 216 352 214 377 198" stroke-width="10" fill="none" />
+    <circle cx="377" cy="198" r="20" fill="#6EC6E8" stroke="none" />
+  </g>
+
+  <!-- GMI Bold White Headline -->
+  <text x="256" y="348" 
+        text-anchor="middle" 
+        fill="#FFFFFF" 
+        font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="142" 
+        font-weight="900" 
+        letter-spacing="-2">GMI</text>
+
+  <!-- CONTABILIDAD White Subheadline -->
+  <text x="256" y="420" 
+        text-anchor="middle" 
+        fill="#FFFFFF" 
+        font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="39" 
+        font-weight="800" 
+        letter-spacing="5">CONTABILIDAD</text>
+</svg>

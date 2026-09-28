@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="soporte-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2FAF6"/>
+      <stop offset="50%" stop-color="#EBF6F1"/>
+      <stop offset="100%" stop-color="#DEEFE7"/>
+    </linearGradient>
+
+    <!-- Grid Patterns -->
+    <pattern id="support-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#059669" stroke-width="0.75" stroke-opacity="0.06"/>
+      <circle cx="0" cy="0" r="1.5" fill="#047857" fill-opacity="0.08"/>
+    </pattern>
+
+    <pattern id="wave-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#025B80" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Base tint & grid -->
+  <rect width="100%" height="100%" fill="url(#soporte-bg)"/>
+  <rect width="100%" height="100%" fill="url(#support-grid)"/>
+  <rect width="100%" height="100%" fill="url(#wave-dots)"/>
+
+  <!-- Watermark: Direct Assistance & High-Priority Hotlines Flow -->
+  <g transform="translate(60, 150)" opacity="0.3">
+    <!-- Soundwave & direct telephone line connection -->
+    <path d="M 40,50 Q 140,20 240,50 T 440,50 T 640,50 T 840,50" fill="none" stroke="#059669" stroke-width="2.5" stroke-dasharray="6,4"/>
+    
+    <!-- Stage 1: Línea Directa Telefónica -->
+    <g transform="translate(40, 20)">
+      <rect x="0" y="0" width="150" height="60" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+      <text x="75" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#065F46" text-anchor="middle">976 480 084</text>
+      <text x="75" y="44" font-family="monospace" font-size="10" font-weight="800" fill="#047857" text-anchor="middle">LÍNEA DIRECTA</text>
+      <circle cx="16" cy="30" r="4" fill="#10B981"/>
+    </g>
+
+    <!-- Stage 2: Consultor Sénior Titulado -->
+    <g transform="translate(250, 20)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="80" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#025B80" text-anchor="middle">CONSULTOR SÉNIOR</text>
+      <text x="80" y="44" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#0369A1" text-anchor="middle">+30 AÑOS EXPERIENCIA</text>
+    </g>
+
+    <!-- Stage 3: Resolución Inmediata -->
+    <g transform="translate(470, 20)">
+      <rect x="0" y="0" width="150" height="60" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+      <text x="75" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#047857" text-anchor="middle">TIEMPO RESPUESTA</text>
+      <text x="75" y="44" font-family="monospace" font-size="10" font-weight="800" fill="#059669" text-anchor="middle">&lt; 15 MINUTOS [SLA]</text>
+    </g>
+  </g>
+
+  <!-- Watermark: Large Seal of Certified Human Support & Quality -->
+  <g transform="translate(780, 170)" opacity="0.25">
+    <!-- Circular Seal -->
+    <circle cx="170" cy="170" r="155" fill="none" stroke="#059669" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <circle cx="170" cy="170" r="140" fill="none" stroke="#059669" stroke-width="1.5"/>
+    <circle cx="170" cy="170" r="115" fill="#059669" fill-opacity="0.03"/>
+
+    <!-- Headset & Consultation Shield Icon -->
+    <path d="M 130,170 C 130,130 150,110 170,110 C 190,110 210,130 210,170" fill="none" stroke="#059669" stroke-width="3"/>
+    <rect x="120" y="160" width="16" height="30" rx="6" fill="#059669" fill-opacity="0.3" stroke="#059669" stroke-width="1.5"/>
+    <rect x="204" y="160" width="16" height="30" rx="6" fill="#059669" fill-opacity="0.3" stroke="#059669" stroke-width="1.5"/>
+    <path d="M 212,185 C 212,205 190,215 170,215" fill="none" stroke="#059669" stroke-width="2.5"/>
+    <circle cx="166" cy="215" r="4" fill="#059669"/>
+
+    <!-- Seal Typography -->
+    <text x="170" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#059669" text-anchor="middle" letter-spacing="3.5">
+      ATENCIÓN DIRECTA Y PERSONAL
+    </text>
+    <text x="170" y="260" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#059669" text-anchor="middle" letter-spacing="2.5">
+      CENTRO CÁLCULO BOSCO
+    </text>
+    <text x="170" y="278" font-family="monospace" font-size="9" font-weight="700" fill="#065F46" text-anchor="middle">
+      SIN CENTRALITAS · 100% HUMANO
+    </text>
+  </g>
+
+  <!-- Watermark: Service Log & Helpdesk Protocols -->
+  <g transform="translate(80, 480)" opacity="0.32" font-family="monospace" font-size="11" fill="#065F46">
+    <text x="0" y="0" font-weight="bold">PROTOCOLO DE ASISTENCIA Y ASESORAMIENTO A SECRETARIOS-INTERVENTORES</text>
+    <line x1="0" y1="10" x2="940" y2="10" stroke="#059669" stroke-width="1.5" stroke-opacity="0.4"/>
+    <text x="0" y="32">CANAL DIRECTO: ATENCIÓN INMEDIATA POR CONSULTOR CONTABLE ASIGNADO A SU ENTIDAD</text>
+    <text x="0" y="56">RESOLUCIÓN DE DUDAS: CIERRES PRESUPUESTARIOS, MODIFICACIONES DE CRÉDITO Y REGLAS FISCALES</text>
+    <text x="0" y="80">SESIONES DE TELEASISTENCIA SEGURA REMOTA MEDIANTE CONEXIÓN CIFRADA PUNTO A PUNTO</text>
+    <line x1="0" y1="92" x2="940" y2="92" stroke="#059669" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.4"/>
+    <text x="0" y="112" font-weight="bold">ÍNDICE DE SATISFACCIÓN GLOBAL DE CLIENTES: 99,4% · FIDELIDAD MEDIA: &gt; 18 AÑOS</text>
+  </g>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="1060" cy="220" r="300" fill="#10B981" fill-opacity="0.08" filter="blur(75px)"/>
+  <circle cx="160" cy="580" r="260" fill="#025B80" fill-opacity="0.05" filter="blur(65px)"/>
+</svg>

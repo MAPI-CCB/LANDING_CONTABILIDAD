@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bolsa-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2F0FA"/>
+      <stop offset="50%" stop-color="#D4E7F6"/>
+      <stop offset="100%" stop-color="#C2DCF2"/>
+    </linearGradient>
+
+    <linearGradient id="budget-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#025B80" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Grid Patterns -->
+    <pattern id="budget-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284C7" stroke-width="0.85" stroke-opacity="0.12"/>
+      <circle cx="0" cy="0" r="1.6" fill="#025B80" fill-opacity="0.18"/>
+    </pattern>
+
+    <pattern id="diagonal-budget" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 M 0 0 L 20 20" fill="none" stroke="#025B80" stroke-width="0.6" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Base architectural tint -->
+  <rect width="100%" height="100%" fill="url(#bolsa-bg)"/>
+  <rect width="100%" height="100%" fill="url(#budget-grid)"/>
+  <rect width="100%" height="100%" fill="url(#diagonal-budget)"/>
+
+  <!-- Watermark: Fases del Gasto Público (RC -> A -> D -> O -> P) -->
+  <g transform="translate(60, 160)" opacity="0.52">
+    <!-- Connecting flow track -->
+    <line x1="40" y1="50" x2="680" y2="50" stroke="#025B80" stroke-width="2.5" stroke-dasharray="6,4"/>
+    
+    <!-- Stage RC: Retención -->
+    <g transform="translate(40, 20)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="30" y="36" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#025B80" text-anchor="middle">RC</text>
+      <text x="30" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#025B80" text-anchor="middle">Retención</text>
+    </g>
+
+    <!-- Stage A: Autorización -->
+    <g transform="translate(190, 20)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="30" y="36" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#025B80" text-anchor="middle">A</text>
+      <text x="30" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#025B80" text-anchor="middle">Autorización</text>
+    </g>
+
+    <!-- Stage D: Disposición -->
+    <g transform="translate(340, 20)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <text x="30" y="36" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#0284C7" text-anchor="middle">D</text>
+      <text x="30" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#0284C7" text-anchor="middle">Compromiso</text>
+    </g>
+
+    <!-- Stage O: Reconocimiento de Obligación -->
+    <g transform="translate(490, 20)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#025B80" stroke-width="2"/>
+      <text x="30" y="36" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#025B80" text-anchor="middle">O</text>
+      <text x="30" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#025B80" text-anchor="middle">Obligación</text>
+    </g>
+
+    <!-- Stage P: Ordenación del Pago -->
+    <g transform="translate(640, 20)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+      <text x="30" y="36" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#047857" text-anchor="middle">P</text>
+      <text x="30" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#047857" text-anchor="middle">Pago</text>
+    </g>
+  </g>
+
+  <!-- Watermark: Gran Sello Presupuestario y Estructura por Capítulos -->
+  <g transform="translate(760, 180)" opacity="0.45">
+    <!-- Concentric circular seal of Budgetary Control -->
+    <circle cx="180" cy="180" r="160" fill="none" stroke="#025B80" stroke-width="2" stroke-dasharray="6,4"/>
+    <circle cx="180" cy="180" r="145" fill="none" stroke="#025B80" stroke-width="1.5"/>
+    <circle cx="180" cy="180" r="120" fill="#0284C7" fill-opacity="0.08"/>
+
+    <!-- Bar chart / Budget Execution Pillars inside seal -->
+    <rect x="110" y="200" width="22" height="60" rx="3" fill="#025B80" fill-opacity="0.45"/>
+    <rect x="145" y="160" width="22" height="100" rx="3" fill="#0284C7" fill-opacity="0.55"/>
+    <rect x="180" y="130" width="22" height="130" rx="3" fill="#025B80" fill-opacity="0.65"/>
+    <rect x="215" y="175" width="22" height="85" rx="3" fill="#10B981" fill-opacity="0.55"/>
+    
+    <!-- Horizon baseline -->
+    <line x1="90" y1="262" x2="270" y2="262" stroke="#025B80" stroke-width="2"/>
+
+    <!-- Seal Typography -->
+    <text x="180" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#025B80" text-anchor="middle" letter-spacing="3">
+      VINCULACIÓN JURÍDICA
+    </text>
+    <text x="180" y="295" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#025B80" text-anchor="middle" letter-spacing="2">
+      CONTROL PRESUPUESTARIO
+    </text>
+  </g>
+
+  <!-- Budget Ledger Breakdown Table Watermark -->
+  <g transform="translate(80, 480)" opacity="0.52" font-family="monospace" font-size="11" fill="#025B80">
+    <text x="0" y="0" font-weight="bold">ORG   PROG   ECON   DESCRIPCIÓN PARTIDA PRESUPUESTARIA           CRÉDITO INICIAL     DISPONIBLE</text>
+    <line x1="0" y1="10" x2="920" y2="10" stroke="#025B80" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="0" y="32">01    9200   22601  ATENCIONES PROTOCOLARIAS Y REPRESENTATIVAS       14.500,00 €      4.850,20 €</text>
+    <text x="0" y="56">01    9200   22706  ESTUDIOS Y TRABAJOS TÉCNICOS AUDITORÍA           38.000,00 €     19.240,00 €</text>
+    <text x="0" y="80">02    1621   22700  RECOGIDA Y GESTIÓN DE RESIDUOS SÓLIDOS          245.000,00 €     82.700,00 €</text>
+    <text x="0" y="104">03    3340   22609  ACTIVIDADES CULTURALES Y FESTEJOS PATRONALES     92.000,00 €     31.100,50 €</text>
+    <text x="0" y="128">04    1532   61900  PAVIMENTACIÓN Y MEJORA DE VÍAS PÚBLICAS         180.000,00 €     64.200,00 €</text>
+    <line x1="0" y1="140" x2="920" y2="140" stroke="#025B80" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.5"/>
+    <text x="0" y="160" font-weight="bold">TOTAL CAPÍTULO 2 (GASTOS CORRIENTES EN BIENES Y SERVICIOS)     1.240.000,00 €    412.350,70 € [OK]</text>
+  </g>
+
+  <!-- Soft Ambient Glow Orbs -->
+  <circle cx="1060" cy="240" r="300" fill="#0284C7" fill-opacity="0.18" filter="blur(70px)"/>
+  <circle cx="140" cy="560" r="260" fill="#025B80" fill-opacity="0.12" filter="blur(60px)"/>
+</svg>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="norma-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8FC"/>
+      <stop offset="45%" stop-color="#EBF3FA"/>
+      <stop offset="80%" stop-color="#E2EDF7"/>
+      <stop offset="100%" stop-color="#D9E7F4"/>
+    </linearGradient>
+
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#025B80" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="gold-bank" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!-- Grid Patterns -->
+    <pattern id="ledger-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#025B80" stroke-width="0.75" stroke-opacity="0.06"/>
+      <circle cx="0" cy="0" r="1.5" fill="#025B80" fill-opacity="0.12"/>
+    </pattern>
+
+    <pattern id="dot-matrix" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#0284C7" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base architectural and canvas tint -->
+  <rect width="100%" height="100%" fill="url(#norma-bg)"/>
+  
+  <!-- Financial Ledger Grid Layer -->
+  <rect width="100%" height="100%" fill="url(#ledger-grid)"/>
+  
+  <!-- Modern Bank Treasury Columns & Facade Perspective (Watermark) -->
+  <g opacity="0.18" stroke="#025B80" stroke-width="1.5" fill="none">
+    <!-- Classical banking pediment / modern financial institution facade -->
+    <path d="M 680,180 L 1150,180 L 915,80 Z" stroke-width="2.5" fill="#025B80" fill-opacity="0.03"/>
+    <line x1="660" y1="185" x2="1170" y2="185" stroke-width="3"/>
+    <line x1="680" y1="195" x2="1150" y2="195" stroke-width="1.5"/>
+    
+    <!-- Bank Columns -->
+    <rect x="710" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    <rect x="780" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    <rect x="850" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    <rect x="920" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    <rect x="990" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    <rect x="1060" y="200" width="28" height="340" rx="4" fill="#025B80" fill-opacity="0.04"/>
+    
+    <!-- Column Bases & Podium -->
+    <line x1="670" y1="545" x2="1160" y2="545" stroke-width="2.5"/>
+    <line x1="650" y1="555" x2="1180" y2="555" stroke-width="3.5"/>
+    <line x1="630" y1="570" x2="1200" y2="570" stroke-width="2"/>
+  </g>
+
+  <!-- Watermark: Official Bank Standard Seals & Normative Badges -->
+  <g transform="translate(820, 260)" opacity="0.22">
+    <!-- Circular Banking Regulation Seal -->
+    <circle cx="160" cy="160" r="140" fill="none" stroke="#025B80" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <circle cx="160" cy="160" r="125" fill="none" stroke="#025B80" stroke-width="1.5"/>
+    <circle cx="160" cy="160" r="100" fill="#025B80" fill-opacity="0.03"/>
+    
+    <!-- Inner Emblem: Scales of Accounting Balance & Bank Vault Key -->
+    <path d="M 160,95 L 160,225" stroke="#025B80" stroke-width="3"/>
+    <path d="M 115,125 L 205,125" stroke="#025B80" stroke-width="3"/>
+    <!-- Left Scale Pan -->
+    <line x1="115" y1="125" x2="95" y2="160" stroke="#025B80" stroke-width="1.5"/>
+    <line x1="115" y1="125" x2="135" y2="160" stroke="#025B80" stroke-width="1.5"/>
+    <path d="M 85,160 Q 115,180 145,160 Z" fill="#025B80" fill-opacity="0.2" stroke="#025B80" stroke-width="1.5"/>
+    <!-- Right Scale Pan -->
+    <line x1="205" y1="125" x2="185" y2="160" stroke="#025B80" stroke-width="1.5"/>
+    <line x1="205" y1="125" x2="225" y2="160" stroke="#025B80" stroke-width="1.5"/>
+    <path d="M 175,160 Q 205,180 235,160 Z" fill="#025B80" fill-opacity="0.2" stroke="#025B80" stroke-width="1.5"/>
+    <!-- Seal Base -->
+    <path d="M 135,225 L 185,225" stroke="#025B80" stroke-width="4"/>
+
+    <!-- Circular Text Path or Emblems -->
+    <text x="160" y="75" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#025B80" text-anchor="middle" letter-spacing="3.5">
+      NORMA 43 · AEB · CSB
+    </text>
+    <text x="160" y="255" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#025B80" text-anchor="middle" letter-spacing="2.5">
+      EXTRACTOS BANCARIOS ESPAÑA
+    </text>
+  </g>
+
+  <!-- Bank Reconciliation Diagram & Digital Financial Flow -->
+  <g opacity="0.25">
+    <!-- Electronic Data Streams (Norma 43 Record Types: 11, 22, 23, 33, 88) -->
+    <path d="M 40,320 C 220,300 380,360 520,310 S 760,250 940,290 1140,260 1200,270" 
+          fill="none" stroke="#0284C7" stroke-width="2" stroke-dasharray="8,6"/>
+    <path d="M 40,360 C 200,340 340,410 500,370 S 780,330 920,360 1100,320 1200,340" 
+          fill="none" stroke="#025B80" stroke-width="1.5" stroke-dasharray="5,5"/>
+          
+    <!-- Electronic Bank Statement Snippets (Monospace Record Structure) -->
+    <g transform="translate(60, 520)" fill="#025B80" font-family="monospace" font-size="11" opacity="0.45">
+      <text x="0" y="0">11 0049 1500 28 1234567890 01 0124 310124 2 0000001428500 EUR 3 CUENTA OPERATIVA TESORERÍA</text>
+      <text x="0" y="24">22 0049 1500 150124 150124 01 038 2 0000000342500 0000000000 TRANSFERENCIA SEPA RECIBIDA RECAUDACIÓN</text>
+      <text x="0" y="48">23 01 RECAUDACION TRIBUTARIA MUNICIPAL IBI URBANA TERCER TRIMESTRE 2024</text>
+      <text x="0" y="72">22 0049 1500 200124 200124 02 012 1 0000000185020 0000000000 PAGO A PROVEEDOR SERVICIOS ENERGIA SL</text>
+      <text x="0" y="96">33 0049 1500 28 1234567890 000024 0000001845000 0000000523000 2 0000002750500 EUR</text>
+      <text x="0" y="120">88 999999 000001 000000000048 0000000000000000</text>
+    </g>
+
+    <!-- Visual Bank Verification Badges & Flow Marks -->
+    <g transform="translate(80, 210)">
+      <rect x="0" y="0" width="180" height="38" rx="8" fill="#FFFFFF" stroke="#025B80" stroke-width="1.5" stroke-opacity="0.3"/>
+      <circle cx="20" cy="19" r="8" fill="#10B981" fill-opacity="0.3"/>
+      <path d="M 16,19 L 19,22 L 25,16" stroke="#047857" stroke-width="2" fill="none"/>
+      <text x="36" y="23" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#025B80">AEB Cuaderno 43</text>
+    </g>
+
+    <g transform="translate(280, 195)">
+      <rect x="0" y="0" width="195" height="38" rx="8" fill="#FFFFFF" stroke="#025B80" stroke-width="1.5" stroke-opacity="0.3"/>
+      <circle cx="20" cy="19" r="8" fill="#0284C7" fill-opacity="0.3"/>
+      <path d="M 16,19 L 19,22 L 25,16" stroke="#0369A1" stroke-width="2" fill="none"/>
+      <text x="36" y="23" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#025B80">Conciliación Bancaria</text>
+    </g>
+
+    <g transform="translate(495, 210)">
+      <rect x="0" y="0" width="170" height="38" rx="8" fill="#FFFFFF" stroke="#025B80" stroke-width="1.5" stroke-opacity="0.3"/>
+      <circle cx="20" cy="19" r="8" fill="#F59E0B" fill-opacity="0.3"/>
+      <path d="M 16,19 L 19,22 L 25,16" stroke="#B45309" stroke-width="2" fill="none"/>
+      <text x="36" y="23" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#025B80">ISO 20022 / SEPA</text>
+    </g>
+  </g>
+
+  <!-- Soft Ambient Glow Orbs -->
+  <circle cx="1020" cy="220" r="280" fill="#0284C7" fill-opacity="0.07" filter="blur(60px)"/>
+  <circle cx="180" cy="580" r="240" fill="#025B80" fill-opacity="0.05" filter="blur(50px)"/>
+</svg>

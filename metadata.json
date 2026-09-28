@@ -1,0 +1,8 @@
+{
+  "name": "GMI: Contabilidad Web | Centro Cálculo Bosco",
+  "description": "Software avanzado de contabilidad pública y conciliación bancaria Norma 43 para Administraciones Locales, Ayuntamientos y Entidades Públicas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
